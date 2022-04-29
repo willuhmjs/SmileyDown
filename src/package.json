@@ -1,0 +1,23 @@
+{
+  "name": "smileydown",
+  "version": "1.0.1",
+  "description": "A compiled markdown language that uses emoticons.",
+  "main": "src/index.js",
+  "dependencies": {
+    "minimist": "^1.2.6",
+    "winston": "^3.7.2"
+  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willuhm-js/smileydown.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "William Faircloth",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/willuhm-js/smileydown/issues"
+  },
+  "homepage": "https://github.com/willuhm-js/smileydown#readme"
+}
