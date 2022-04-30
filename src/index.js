@@ -19,8 +19,6 @@ if (!input && !i) {
 }
 if (!output && !o) logger.warn("No output specified. Defaulting to output.md");
 
-let lines = fs.readFileSync(input || i).toString().split("\n");
-
 const regKey = [
   {
     "regex": /📣(.*)📣/gi,
@@ -80,11 +78,11 @@ const regKey = [
   }
 ];
 
-lines = lines.map((line) => {
+const lines = fs.readFileSync(input || i).toString().split("\n").map((line) => {
   for (const emoji of regKey) {
     line = line.replace(emoji.regex, emoji.replace);
   }
   return line;
 });
 
-fs.writeFileSync(output || i || "output.md", lines.join("\n"));  
+fs.writeFileSync(output || "output.md", lines.join("\n"));  

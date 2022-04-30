@@ -3,10 +3,16 @@
   "version": "1.0.1",
   "description": "A compiled markdown language that uses emoticons.",
   "main": "src/index.js",
+  "type": "module",
   "dependencies": {
     "minimist": "^1.2.6",
     "winston": "^3.7.2"
-  }
+  },
+  "bin": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/willuhm-js/smileydown.git"
@@ -19,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/willuhm-js/smileydown/issues"
   },
-  "homepage": "https://github.com/willuhm-js/smileydown#readme"
+  "homepage": "https://github.com/willuhm-js/smileydown#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.0.0",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.4"
+  }
 }
