@@ -1,23 +1,18 @@
 import fs from "fs";
-import winston from "winston";
+import chalk from "chalk";
 import minimist from "minimist";
 
 const argv = minimist(process.argv.slice(2));
 
-const logger = winston.createLogger({
-  level: 'info',
-  transports: [
-    new winston.transports.Console(),
-  ],
-  format: winston.format.cli()
-});
+const error = (message: string) => console.error(chalk.red("error | ") + message);
+const warn = (message: string) => console.warn(chalk.yellow("warn | ") + message);
 
 const {i, input, o, output} = argv;
 if (!input && !i) {
-  logger.error("No input specified, please specify an input!");
+  error("No input specified, please specify an input!");
   process.exit(1);
 }
-if (!output && !o) logger.warn("No output specified. Defaulting to output.md");
+if (!output && !o) warn("No output specified. Defaulting to output.md");
 
 const regKey = [
   {
