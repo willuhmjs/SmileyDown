@@ -6,7 +6,7 @@ A compiled markdown language that uses emoticons.
 
 `deno install --allow-net --allow-read -n serve https://raw.githubusercontent.com/wiluhm-js/smileydown/main/src/index.ts`
 
-## test (contributing)
+## test
 
 deno test --allow-read
 
