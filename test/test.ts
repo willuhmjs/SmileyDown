@@ -1,6 +1,6 @@
 import { assertEquals } from "https://deno.land/std@0.137.0/testing/asserts.ts";
+import { parse } from "../src/lib.ts"
 
-Deno.test("url test", () => {
-  const url = new URL("./foo.js", "https://deno.land/");
-  assertEquals(url.href, "https://deno.land/foo.js");
+Deno.test("url test", async () => {
+  assertEquals(await Deno.readTextFile("test/expected.md"), parse(await Deno.readTextFile("test/example.sd")));
 });
