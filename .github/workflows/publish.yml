@@ -1,0 +1,41 @@
+name: publish
+
+on:
+  push:
+    branches: [main]
+
+- uses: denoland/setup-deno@v1
+  with:
+    deno-version: v1.x
+
+jobs:
+  checks:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x.x
+      - name: Test Build
+        run: deno test --allow-read
+  gh-release:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x.x
+      - name: Set compile.sh to executable
+        run: chmod +x ./compile.sh
+      - name: Run compile.sh
+        run: ./compile.sh
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            target/*.jar
