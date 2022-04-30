@@ -4,7 +4,7 @@ A compiled markdown language that uses emoticons.
 
 ## install
 
-`deno install --allow-net --allow-read -n serve https://deno.land/std@0.137.0/http/file_server.ts`
+`deno install --allow-net --allow-read -n serve `https://raw.githubusercontent.com/wiluhm-js/smileydown/main/src/index.ts`
 
 ## test (contributing)
 
