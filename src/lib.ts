@@ -1,26 +1,3 @@
-import fs from "fs";
-import winston from "winston";
-import minimist from "minimist";
-
-const argv = minimist(process.argv.slice(2));
-
-const logger = winston.createLogger({
-  level: 'info',
-  transports: [
-    new winston.transports.Console(),
-  ],
-  format: winston.format.cli()
-});
-
-const {i, input, o, output} = argv;
-if (!input && !i) {
-  logger.error("No input specified, please specify an input!");
-  process.exit(1);
-}
-if (!output && !o) logger.warn("No output specified. Defaulting to output.md");
-
-let lines = fs.readFileSync(input || i).toString().split("\n");
-
 const regKey = [
   {
     "regex": /📣(.*)📣/gi,
@@ -80,11 +57,11 @@ const regKey = [
   }
 ];
 
-lines = lines.map((line) => {
-  for (const emoji of regKey) {
-    line = line.replace(emoji.regex, emoji.replace);
-  }
-  return line;
-});
-
-fs.writeFileSync(output || i || "output.md", lines.join("\n"));  
+export function parse(string: string) {
+  return string.split("\n").map((line) => {
+    for (const emoji of regKey) {
+      line = line.replaceAll(emoji.regex, emoji.replace);
+    }
+    return line;
+  }).join("\n");
+}
