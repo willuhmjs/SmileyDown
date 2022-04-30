@@ -1,17 +1,17 @@
-import fs from "fs";
-import chalk from "chalk";
-import minimist from "minimist";
+import { red, yellow } from "https://deno.land/std@0.137.0/fmt/colors.ts"
+import { parse } from "https://deno.land/std@0.137.0/flags/mod.ts";
 
-const argv = minimist(process.argv.slice(2));
+const argv = parse(Deno.args)
 
-const error = (message: string) => console.error(chalk.red("error | ") + message);
-const warn = (message: string) => console.warn(chalk.yellow("warn | ") + message);
+const error = (message: string) => console.error(red("error | ") + message);
+const warn = (message: string) => console.warn(yellow("warn | ") + message);
 
-const {i, input, o, output} = argv;
+const { i, input, o, output } = argv as Record<string, string>;
 if (!input && !i) {
   error("No input specified, please specify an input!");
-  process.exit(1);
+  Deno.exit(1);
 }
+
 if (!output && !o) warn("No output specified. Defaulting to output.md");
 
 const regKey = [
@@ -73,11 +73,11 @@ const regKey = [
   }
 ];
 
-const lines = fs.readFileSync(input || i).toString().split("\n").map((line) => {
+const lines = (await Deno.readTextFile(input || i)).split("\n").map((line) => {
   for (const emoji of regKey) {
-    line = line.replace(emoji.regex, emoji.replace);
+    line = line.replaceAll(emoji.regex, emoji.replace);
   }
   return line;
 });
 
-fs.writeFileSync(output || "output.md", lines.join("\n"));  
+await Deno.writeTextFile(output || "output.md", lines.join("\n"));  
