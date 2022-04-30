@@ -1,5 +1,6 @@
 import { red, yellow } from "https://deno.land/std@0.137.0/fmt/colors.ts"
 import { parse } from "https://deno.land/std@0.137.0/flags/mod.ts";
+import { parse as parseDown } from "./lib.ts"
 
 const argv = parse(Deno.args)
 
@@ -14,70 +15,4 @@ if (!input && !i) {
 
 if (!output && !o) warn("No output specified. Defaulting to output.md");
 
-const regKey = [
-  {
-    "regex": /📣(.*)📣/gi,
-    "replace": "# $1"
-  },
-  {
-   "regex": /🔊(.*)🔊/gi,
-   "replace": "## $1"
-  },
-  {
-   "regex": /🔊(.*)🔊/gi,
-   "replace": "## $1"
-  },
-  {
-    "regex": /🔉(.*)🔉/gi,
-    "replace": "### $1"
-  },
-  {
-    "regex": /🔈(.*)🔈/gi,
-    "replace": "#### $1"
-  },
-  {
-    "regex": /🖼(.*)🖼/gi,
-    "replace": "![$1]($1)"
-  },
-  {
-    "regex": /🔗(.*)🔗/gi,
-    "replace": "[$1]($1)"
-  },
-  {
-    "regex": /🦍(.*)🦍/gi,
-    "replace": "**$1**"
-  },
-  {
-    "regex": /🎩(.*)🎩/gi,
-    "replace": "*$1*"
-  },
-  {
-    "regex": /⛔(.*)⛔/gi,
-    "replace": "~~$1~~"
-  },
-  {
-    "regex": /💻/gi,
-    "replace": "`"
-  },
-  {
-    "regex": /🖥/gi,
-    "replace": "```"
-  },
-  {
-    "regex": /📋/gi,
-    "replace": "- "
-  },
-  {
-    "regex": /📜/gi,
-    "replace": "> "
-  }
-];
-
-const lines = (await Deno.readTextFile(input || i)).split("\n").map((line) => {
-  for (const emoji of regKey) {
-    line = line.replaceAll(emoji.regex, emoji.replace);
-  }
-  return line;
-});
-
-await Deno.writeTextFile(output || "output.md", lines.join("\n"));  
+await Deno.writeTextFile(output || "output.md", parseDown(await Deno.readTextFile(input || i)));  
