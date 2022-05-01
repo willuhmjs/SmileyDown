@@ -30,7 +30,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/LeoDog896"><img src="https://avatars.githubusercontent.com/u/26509014?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tristan</b></sub></a><br /><a href="https://github.com/willuhm-js/smileydown/commits?author=LeoDog896" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/LeoDog896"><img src="https://avatars.githubusercontent.com/u/26509014?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tristan</b></sub></a><br /><a href="https://github.com/willuhm-js/smileydown/commits?author=LeoDog896" title="Code">💻</a> <a href="https://github.com/willuhm-js/smileydown/commits?author=LeoDog896" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
