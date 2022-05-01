@@ -12,7 +12,7 @@ const { i, input, o, output } = argv as Record<string, string>;
 
 const parsedInput = await getInput()
 
-if (!output && !o) warn("No output specified. Defaulting to output.md");
+if (!output && !o) warn("No output is specified, so I am outputting to the console.");
 
 if (output || o) {
   await Deno.writeTextFile(output || o, parseDown(parsedInput));  
