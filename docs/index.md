@@ -2,8 +2,21 @@
   <img class="ms-2 me-2 w-75" src="./logo.png" alt="SmileyDown logo"/>
 </div>
 
-<p class="lead text-center">SmileyDown: A compiled markdown language that uses emoticons. <a href="https://www.github.com/willuhm-js/SmileyDown/">Learn more</a>.</p>
-<p class="lead text-center mb-5">Click an emoji below to copy it to your clipboard.</p>
+<p class="lead text-center mb-5">SmileyDown: A compiled markdown language that uses emoticons. <a href="https://www.github.com/willuhm-js/SmileyDown/">Learn more</a>.</p>
+
+## Example File
+```
+📣Never gonna give you up!📣
+
+🔊Artist🔊
+🦍Never Gonna Give You Up🦍 is ⛔not⛔ sung by Rick Astley.
+
+🔊YouTube Video🔊
+🔗https://www.youtube.com/watch?v=dQw4w9WgXcQ🔗
+```
+
+## Formatting Table
+Click an emoji below to copy it to your clipboard.
 
 <script>
   function copy(e) {
