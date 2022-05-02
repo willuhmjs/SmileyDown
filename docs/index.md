@@ -27,12 +27,12 @@
     margin: 0;
   }
 
-  .emojiButton:hover {
+  .emojiButton:hover, .emojiButtonTD:hover {
     background-color: rgba(128, 128, 128, 0.4);
     transition: background-color 0.3s;
   }
 
-  .emojiButton:active {
+  .emojiButton:active, .emojiButtonTD:active {
     background-color: rgba(128, 128, 128, 0.6);
     transition: background-color 0.1s;
   }
@@ -48,79 +48,79 @@
   </thead>
   <tbody>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">📣</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">📣</button></td>
       <td>Heading 1</td>
       <td>📣Heading 1📣</td>
       <td># Heading 1</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🔊</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">🔊</button></td>
       <td>Heading 2</td>
       <td>🔊Heading 2🔊</td>
       <td>## Heading 2</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🔉</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">🔉</button></td>
       <td>Heading 3</td>
       <td>🔉Heading 3🔉</td>
       <td>### Heading 3</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🔈</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">🔈</button></td>
       <td>Heading 4</td>
       <td>🔈Heading 4🔈</td>
       <td>#### Heading 4</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🔗</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">🔗</button></td>
       <td>Link</td>
       <td>🔗https://www.example.com🔗</td>
       <td>[https://www.example.com](https://www.example.com)</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🖼</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">🖼</button></td>
       <td>Image</td>
       <td>🖼./example.jpg🖼</td>
       <td>![./example.jpg](./example.jpg)</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">💻</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">💻</button></td>
       <td>Code</td>
       <td>💻Hello, world!💻</td>
       <td>`Hello, world!`</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🖥</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">🖥</button></td>
       <td>Code Block</td>
       <td>🖥Hello, world!🖥</td>
       <td>```Hello, world!```</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">⛔</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">⛔</button></td>
       <td>Strikethrough</td>
       <td>⛔Lorem ispum⛔</td>
       <td>~~Lorem ispum~~</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🦍</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">🦍</button></td>
       <td>Bold</td>
       <td>🦍Lorem ispum🦍</td>
       <td>**Lorem ispum**</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🎩</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">🎩</button></td>
       <td>Italics</td>
       <td>🎩Lorem ispum🎩</td>
       <td>*Lorem ispum*</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">📜</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">📜</button></td>
       <td>Block Quote</td>
       <td>📜There once was a man from Nantucket...</td>
       <td>&gt; There once was a man from Nantucket...</td>
     </tr>
     <tr>
-      <td style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">📋</button></td>
+      <td style="padding: 0px;" class="emojiButtonTD"><button class="emojiButton" onclick="copy(this.innerText)">📋</button></td>
       <td>Unordered List</td>
       <td>
         📋Item 1<br />
