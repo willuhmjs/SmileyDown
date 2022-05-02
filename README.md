@@ -3,7 +3,9 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-A compiled markdown language that uses emoticons.
+[https://willuhm-js.github.io/SmileyDown](https://willuhm-js.github.io/SmileyDown)
+
+A compiled markdown language that uses emoticons. 
 
 ## Installation
 
@@ -12,6 +14,106 @@ deno install --allow-write --allow-read -n serve https://raw.githubusercontent.c
 deno run --allow-read --allow-write src/index.ts
 bash compile.sh
 ```
+
+## Formatting
+<table>
+  <thead>
+    <tr>
+      <th>Emoji</th>
+      <th>Description</th>
+      <th>Input</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>📣</td>
+      <td>Heading 1</td>
+      <td>📣Heading 1📣</td>
+      <td># Heading 1</td>
+    </tr>
+    <tr>
+      <td>🔊</td>
+      <td>Heading 2</td>
+      <td>🔊Heading 2🔊</td>
+      <td>## Heading 2</td>
+    </tr>
+    <tr>
+      <td>🔉</td>
+      <td>Heading 3</td>
+      <td>🔉Heading 3🔉</td>
+      <td>### Heading 3</td>
+    </tr>
+    <tr>
+      <td>🔈</td>
+      <td>Heading 4</td>
+      <td>🔈Heading 4🔈</td>
+      <td>#### Heading 4</td>
+    </tr>
+    <tr>
+      <td>🔗</td>
+      <td>Link</td>
+      <td>🔗https://www.example.com🔗</td>
+      <td>[https://www.example.com](https://www.example.com)</td>
+    </tr>
+    <tr>
+      <td>🖼</td>
+      <td>Image</td>
+      <td>🖼./example.jpg🖼</td>
+      <td>![./example.jpg](./example.jpg)</td>
+    </tr>
+    <tr>
+      <td>💻</td>
+      <td>Code</td>
+      <td>💻Hello, world!💻</td>
+      <td>`Hello, world!`</td>
+    </tr>
+    <tr>
+      <td>🖥</td>
+      <td>Code Block</td>
+      <td>🖥Hello, world!🖥</td>
+      <td>```Hello, world!```</td>
+    </tr>
+    <tr>
+      <td>⛔</td>
+      <td>Strikethrough</td>
+      <td>⛔Lorem ispum⛔</td>
+      <td>~~Lorem ispum~~</td>
+    </tr>
+    <tr>
+      <td>🦍</td>
+      <td>Bold</td>
+      <td>🦍Lorem ispum🦍</td>
+      <td>**Lorem ispum**</td>
+    </tr>
+    <tr>
+      <td>🎩</td>
+      <td>Italics</td>
+      <td>🎩Lorem ispum🎩</td>
+      <td>*Lorem ispum*</td>
+    </tr>
+    <tr>
+      <td>📜</td>
+      <td>Block Quote</td>
+      <td>📜There once was a man from Nantucket...</td>
+      <td>&gt; There once was a man from Nantucket...</td>
+    </tr>
+    <tr>
+      <td>📋</td>
+      <td>Unordered List</td>
+      <td>
+        📋Item 1<br />
+        📋Item 2<br />
+        📋Item 3
+      </td>
+      <td>
+        - Item 1<br />
+        - Item 2<br />
+        - Item 3
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Contributors ✨
 
