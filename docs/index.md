@@ -21,7 +21,6 @@
     padding: 0.7rem;
     background-color: white;
     font-size: 20px;
-    margin: 5px;
     width: 100%;
     height: 100%;
     margin: 0;
