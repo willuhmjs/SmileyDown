@@ -15,7 +15,18 @@ deno run --allow-read --allow-write src/index.ts
 bash compile.sh
 ```
 
-## Formatting
+## Example File
+```
+📣Never gonna give you up!📣
+
+🔊Artist🔊
+🦍Never Gonna Give You Up🦍 is ⛔not⛔ sung by Rick Astley.
+
+🔊YouTube Video🔊
+🔗https://www.youtube.com/watch?v=dQw4w9WgXcQ🔗
+```
+
+## Formatting Table
 <table>
   <thead>
     <tr>
