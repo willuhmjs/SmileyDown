@@ -27,12 +27,12 @@
     margin: 0;
   }
 
-  .emojiButtonTD:hover {
+  .emojiButton:hover {
     background-color: rgba(128, 128, 128, 0.4);
     transition: background-color 0.3s;
   }
 
-  .emojiButton:active, .emojiButtonTD:active {
+  .emojiButton:active {
     background-color: rgba(128, 128, 128, 0.6);
     transition: background-color 0.1s;
   }
