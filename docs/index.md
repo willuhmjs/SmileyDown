@@ -27,7 +27,7 @@
     margin: 0;
   }
 
-  .emojiButton:hover, .emojiButtonTD:hover {
+  .emojiButtonTD:hover {
     background-color: rgba(128, 128, 128, 0.4);
     transition: background-color 0.3s;
   }
