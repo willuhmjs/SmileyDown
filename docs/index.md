@@ -1,3 +1,5 @@
+<meta name="theme-color" content="#ffff00">
+
 <div class="text-center mb-5">
   <img class="ms-2 me-2 w-75" src="./logo.png" alt="SmileyDown logo"/>
 </div>
