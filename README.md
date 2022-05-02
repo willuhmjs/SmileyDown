@@ -5,19 +5,19 @@
 
 A compiled markdown language that uses emoticons.
 
-## install
+## Install
 
 `deno install --allow-write --allow-read -n serve https://raw.githubusercontent.com/wiluhm-js/smileydown/main/src/index.ts`
 
-## run
+### Run
 
 `deno run --allow-read --allow-write src/index.ts`
 
-## test (contributing)
+### Test
 
 `deno test --allow-read`
 
-## build
+### Build
 
 `bash compile.sh`
 
