@@ -7,17 +7,16 @@
 
 A compiled markdown language that uses emoticons. 
 
-## Installation
+## Installation & Usage
 
 ```
-deno install --allow-write --allow-read -n smileydown https://raw.githubusercontent.com/willuhm-js/SmileyDown/main/src/index.ts
+deno install --allow-write --allow-read -n smileydown https://raw.githubusercontent.com/willuhm-js/SmileyDown/main/src/index.ts [-i input]
 ```
 
 ### From Source
 ```
 git clone https://www.github.com/willuhm-js/SmileyDown/
-deno run --allow-read --allow-write SmileyDown/src/index.ts
-bash compile.sh
+deno run --allow-read --allow-write SmileyDown/src/index.ts [-i input]
 ```
 
 ## Example File
