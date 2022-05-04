@@ -10,7 +10,7 @@ A compiled markdown language that uses emoticons.
 ## Installation
 
 ```
-deno install --allow-write --allow-read -n serve https://raw.githubusercontent.com/wiluhm-js/smileydown/main/src/index.ts
+deno install --allow-write --allow-read -n smileydown https://raw.githubusercontent.com/wiluhm-js/smileydown/main/src/index.ts
 deno run --allow-read --allow-write src/index.ts
 bash compile.sh
 ```
