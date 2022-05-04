@@ -9,9 +9,7 @@ A compiled markdown language that uses emoticons.
 
 ## Installation & Usage
 
-```
-deno install --allow-write --allow-read -n smileydown https://raw.githubusercontent.com/willuhm-js/SmileyDown/main/src/index.ts [-i input]
-```
+Download the corresponding image for your machine from the [Releases](https://github.com/willuhm-js/SmileyDown/releases) section.
 
 ### From Source
 ```
