@@ -6,12 +6,12 @@
 
 ## Example File
 ```
-📣Never gonna give you up!📣
+📣Never gonna give you up!
 
-🔊Artist🔊
+🔊Artist
 🦍Never Gonna Give You Up🦍 is ⛔not⛔ sung by Rick Astley.
 
-🔊YouTube Video🔊
+🔊YouTube Video
 🔗https://www.youtube.com/watch?v=dQw4w9WgXcQ🔗
 ```
 
@@ -62,25 +62,25 @@ Click an emoji below to copy it to your clipboard.
     <tr>
       <td class="emojiButtonTD" style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">📣</button></td>
       <td>Heading 1</td>
-      <td>📣Heading 1📣</td>
+      <td>📣Heading 1</td>
       <td># Heading 1</td>
     </tr>
     <tr>
       <td class="emojiButtonTD" style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🔊</button></td>
       <td>Heading 2</td>
-      <td>🔊Heading 2🔊</td>
+      <td>🔊Heading 2</td>
       <td>## Heading 2</td>
     </tr>
     <tr>
       <td class="emojiButtonTD" style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🔉</button></td>
       <td>Heading 3</td>
-      <td>🔉Heading 3🔉</td>
+      <td>🔉Heading 3</td>
       <td>### Heading 3</td>
     </tr>
     <tr>
       <td class="emojiButtonTD" style="padding: 0px;"><button class="emojiButton" onclick="copy(this.innerText)">🔈</button></td>
       <td>Heading 4</td>
-      <td>🔈Heading 4🔈</td>
+      <td>🔈Heading 4</td>
       <td>#### Heading 4</td>
     </tr>
     <tr>
