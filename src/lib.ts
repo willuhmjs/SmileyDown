@@ -1,23 +1,23 @@
 const regKey = [
   {
-    "regex": /📣(.*)📣/gi,
-    "replace": "# $1"
+    "regex": /📣/gi,
+    "replace": "# "
   },
   {
-   "regex": /🔊(.*)🔊/gi,
-   "replace": "## $1"
+   "regex": /🔊/gi,
+   "replace": "## "
   },
   {
-   "regex": /🔊(.*)🔊/gi,
-   "replace": "## $1"
+   "regex": /🔊/gi,
+   "replace": "## "
   },
   {
-    "regex": /🔉(.*)🔉/gi,
-    "replace": "### $1"
+    "regex": /🔉/gi,
+    "replace": "### "
   },
   {
-    "regex": /🔈(.*)🔈/gi,
-    "replace": "#### $1"
+    "regex": /🔈/gi,
+    "replace": "#### "
   },
   {
     "regex": /🖼(.*)🖼/gi,
