@@ -6,19 +6,13 @@ import { parse as parseDown } from "./lib.ts"
 const argv = parse(Deno.args)
 
 const error = (message: string) => console.error(red("error | ") + message);
-const warn = (message: string) => console.warn(yellow("warn | ") + message);
+// const warn = (message: string) => console.warn(yellow("warn | ") + message);
 
-const { i, input, o, output } = argv as Record<string, string>;
+const { i, input } = argv as Record<string, string>;
 
 const parsedInput = await getInput()
 
-if (!output && !o) warn("No output is specified, so I am outputting to the console.");
-
-if (output || o) {
-  await Deno.writeTextFile(output || o, parseDown(parsedInput));  
-} else {
-  console.log(parseDown(parsedInput));
-}
+console.log(parseDown(parsedInput));
 
 async function getInput(): Promise<string> {
   if (!input && !i) {
