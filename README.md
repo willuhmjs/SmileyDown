@@ -16,7 +16,7 @@ deno install --allow-write --allow-read -n smileydown https://raw.githubusercont
 ### From Source
 ```
 git clone https://www.github.com/willuhm-js/SmileyDown/
-deno run --allow-read --allow-write src/index.ts
+deno run --allow-read --allow-write SmileyDown/src/index.ts
 bash compile.sh
 ```
 
